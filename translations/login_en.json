@@ -1,0 +1,13 @@
+{
+  "required_email": "Email is required",
+  "required_password": "Password is required",
+  "invalid_credentials": "Invalid username or password",
+  "login": "Log in",
+  "email": "Email",
+  "password": "Password",
+  "role": "Role",
+  "user": "User",
+  "employee": "Employee",
+  "login_button": "Login",
+  "password_recovery": "Password Recovery"
+}

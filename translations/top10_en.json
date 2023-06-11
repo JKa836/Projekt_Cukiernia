@@ -1,0 +1,22 @@
+{
+  "heading": "Top 10 Cakes",
+  "cakeImageAlt": "Cake",
+  "price": "Price: ",
+  "quantity": "Quantity: ",
+  "rating": "Rating: ",
+  "addToCart": "Add to Cart",
+  "cakename_1": "Traditional Cheesecake",
+  "cakename_2": "Poppy Seed Cake",
+  "cakename_3": "Swan Puffs",
+  "cakename_4": "Papal Cream Cake",
+  "cakename_5": "Wuzetka",
+  "cakename_6": "Brownie",
+  "cakename_7": "Chocolate Cupcakes",
+  "cakename_8": "Berry Cake",
+  "cakename_9": "Strawberry Cake",
+  "cakename_10": "Raspberry Cloud Cake",
+  "cakename_11": "Gluten-Free Carrot Cake",
+  "cakename_12": "Gluten-Free Lemon Bundt Cake",
+  "cakename_13": "Vegan Cashew Cheesecake",
+  "cakename_14": "Gluten-Free Apple Pie"
+}

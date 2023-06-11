@@ -1,0 +1,13 @@
+{
+  "required_email": "Wymagany jest adres email",
+  "required_password": "Hasło jest wymagane",
+  "invalid_credentials": "Zła nazwa użytkownika lub złe hasło",
+  "login": "Zaloguj się",
+  "email": "Email",
+  "password": "Hasło",
+  "role": "Rola",
+  "user": "Użytkownik",
+  "employee": "Pracownik",
+  "login_button": "Zaloguj się",
+  "password_recovery": "Odzyskaj hasło"
+}

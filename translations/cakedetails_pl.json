@@ -1,0 +1,10 @@
+{
+  "category": "Kategoria",
+  "price": "Cena",
+  "quantity": "Ilość",
+  "description": "Opis",
+  "rating": "Ocena",
+  "addToCart": "Dodaj do koszyka",
+  "cakeNotFound": "Ciasto nie znalezione.",
+  "cakeIdNotProvided": "Nie podano identyfikatora ciasta."
+}

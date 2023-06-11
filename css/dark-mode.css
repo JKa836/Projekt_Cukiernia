@@ -1,0 +1,919 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+  --czarny: #18191a;
+  --czarny2: #242526;
+  --szary1: #3a3b3c;
+  --bialy: #e4e6eb;
+  --szary2: #b0b3b8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header li, header a, header button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--bialy);
+    text-decoration: none;
+    background-color: var(--szary1);
+}
+
+.container {
+    min-height: 1000px; /* Ustaw minimalną wysokość kontenera */
+    
+}
+body{
+  background-color: var(--czarny);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--szary1);
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.logo{
+    margin-right: auto;
+    font-size: 26px;
+    font-family: 'Lobster', cursive;
+    font-weight: 900;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(245,123,149,1) 50%, rgba(224,82,82,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.nav_links{
+    list-style: none;
+    background-color: var(--szary1);
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+    background-color: var(--szary1);
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    background-color: var(--szary1);
+}
+.nav_links li a:hover{
+    color: #7e5c43;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+
+
+
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--czarny2);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: var(--bialy);
+    background-color: var(--czarny2);
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    background-color: var(--czarny2);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--bialy);
+}
+.signup-form a{
+  color: var(--bialy);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    width: 100%;
+    background-color: var(--czarny2);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 3px solid #787a6c;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 17px;
+    color: var(--bialy);
+}
+
+.signup-form input:focus{
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, rgba(103,35,14,1) 0%,rgba(149,75,48,1) 50%, rgba(103,35,14,1) 100%);
+    transition: transform 0.5 ease;
+
+}
+
+
+.signup-form span {
+    color: #c27251;
+    background-color: var(--czarny2);
+}
+
+.signup-form button[type="submit"] {
+    background-color: #7e5c43;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.signup-form button[type="submit"]:hover {
+    background-color: #7e5c43;
+}
+
+.signup-form span p{
+    margin-top: 10px;
+    background-color: var(--czarny2);
+}
+
+#selectUser {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    background-color: #787a6c;
+    border-radius: 2px;
+    font-weight: 700;
+    color: #f4f4f4;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For Safari */
+    
+  }
+  
+  /* Styling the options */
+  #selectUser option {
+    padding: 8px;
+    font-size: 17px;
+    background-color: #787a6c;
+  }
+
+  .signup-form span.errorLogin p{
+    background-color: #ef9a9a;
+    color: white;
+    border: 1px solid #e57373;
+    border-radius: 2px;
+    padding: 10px;
+  }
+
+
+/*langOption*/
+.langOption{
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For Safari */
+    padding: 5px;
+    color: var(--bialy);
+    background-color: var(--szary1);
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid #7e5c43;
+}
+.langOption option{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*menu rozwijane*/
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+  }
+
+  /*userinfo*/
+  .userInfo {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--czarny2);
+    color: var(--bialy);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.userInfo h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.userInfo p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #67230e;
+}
+
+.userInfo a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 2px;
+    background-color: #7e5c43;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.userInfo a:hover {
+    background-color: #67230e;
+}
+
+.questionOption{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For Safari */
+    appearance: none; /* Remove default appearance */
+    outline: none;
+    color: var(--bialy);
+    background-color: var(--szary1);
+    padding: 10px;
+    border: 1px dotted var(--szary2);
+    
+}
+.questionOption option{
+    padding: 10px;
+    
+}
+
+
+/*style do sklepu*/
+.categories {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    background-color: var(--czarny);
+    color: var(--bialy);
+    text-align: center;
+    font-size: 30px;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    margin-bottom: 10px;
+    background-color: var(--czarny);
+}
+
+.categories ul li a {
+    text-decoration: none;
+    color: var(--bialy);
+    background-color: var(--czarny);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.cakes {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Równomierne rozmieszczenie ciast po środku */
+    gap: 20px; /* Dodatkowy odstęp między divami "cake" */
+}
+
+
+
+.cake {
+    display: inline-block;
+    width: calc(33.33% - 40px); /* Dostosowanie szerokości diva "cake" */
+    text-align: center;
+    background-color: var(--czarny2);
+    padding: 10px;
+    height: 325px;
+}
+
+.cake a {
+    text-decoration: none;
+    color: var(--bialy);
+    background-color: var(--czarny2);
+}
+
+.cake img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.cake h3 {
+    margin: 0;
+    background-color: var(--czarny2);
+}
+
+.rating {
+    margin-top: 10px;
+    background-color: var(--czarny2);
+}
+.cake form{
+  background-color: var(--czarny2);
+}
+
+.cake h3 {
+    margin: 0;
+    background-color: var(--czarny2);
+}
+.cake p{
+  background-color: var(--czarny2);
+}
+.cakes h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #7e5c43;
+    background-color: #f9f9f9;
+    
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(star.png);
+    background-size: cover;
+}
+
+.star.filled {
+    background-image: url(star.png);
+}
+
+.star.unfilled {
+    background-image: url(empty-star.png);
+}
+
+/*sczegoly ciasta*/
+.cake-details {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 5px;
+    color: var(--bialy);
+}
+
+.cake-image img {
+    max-width: 100%;
+    max-height: 450px;
+}
+
+.cake-info h2 {
+    margin-top: 0;
+}
+
+.cake-description h3,
+.cake-rating h3 {
+    margin-top: 0;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+/*ocena ciasta*/
+.cake-rate img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.rate-cake {
+    text-align: center;
+    color: var(--bialy);
+}
+
+/*cart*/
+.container-cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    min-height: 1000px;
+  }
+  
+  .cart-items {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    color: var(--bialy);
+  }
+  
+  .shipping-form {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bialy);
+  }
+  
+  .cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--czarny2);
+  }
+  
+  .cart-items th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--czarny2);
+    color: var(--bialy);
+  }
+ 
+  .cart-items td a{
+    color: var(--bialy);
+    text-decoration: none;
+  }
+
+  .cart-items h2, .cart-items h3{
+    color: var(--bialy);
+  }
+  
+  .cart-items th {
+    background-color: var(--czarny2);
+  }
+  
+  .shipping-form form {
+    width: 100%;
+  }
+  
+  .shipping-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--bialy);
+  }
+  
+  .shipping-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 3px solid #787a6c;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: var(--bialy);
+    background-color: var(--czarny2);
+  }
+
+  .shipping-form input[type="text"]:focus {
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, rgba(103,35,14,1) 0%,rgba(149,75,48,1) 50%, rgba(103,35,14,1) 100%);
+    transition: transform 0.5 ease;
+  }
+  
+  .shipping-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #7e5c43;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .shipping-form button[type="submit"]:hover {
+    background-color: #67230e;
+  }
+
+/*o nas*/
+  .o-nas {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: var(--czarny);
+    color: var(--bialy);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.o-nas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: var(--bialy);
+}
+
+.o-nas text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--bialy);  
+}
+
+.o-nas img {
+    max-width: 1000px;
+}
+
+/*hero*/
+.hero {
+    position: relative;
+    height: 500px;
+    background-image: url("cake-background.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--bialy);
+    background-color: var(--czarny);
+}
+
+.hero h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #7e5c43;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+    background-color: #67230e;
+}
+
+
+/*top 10*/
+
+.cakes10 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: var(--czarny);
+}
+
+.cake10 {
+    display: inline-block;
+    width: 25%;
+    margin: 0 1% 20px 1%;
+    text-align: center;
+    background-color: var(--czarny2);
+    padding: 10px;
+}
+
+.cake10 a {
+    text-decoration: none;
+    color: var(--bialy);
+    background-color: var(--czarny2);
+}
+
+.cake10 img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.cake10 form{
+    background-color: var(--czarny2);
+}
+
+.cake10 h3 {
+    margin: 0;
+    background-color: var(--czarny2);
+    color: var(--bialy);
+}
+.cake10 p{
+  background-color: var(--czarny2);
+  color: var(--bialy);
+}
+.cakes10 h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #7e5c43;
+    background-color: var(--czarny)
+    
+}
+
+.cake-icon {
+    vertical-align: middle;
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+/*formularz koszyka*/
+.cart-form {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--bialy);
+}
+
+.cart-form input[type="number"] {
+    width: 50px;
+    margin-right: 5px;
+    color: var(--bialy);
+    background-color: var(--szary1);
+    text-align: center;
+}
+
+.cart-form input[type="submit"] {
+    background-color: #7e5c43;
+    border: 1px solid #7e5c43;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+
+}
+.cart-form input[type="submit"]:hover {
+    background-color: #67230e;
+    border: 1px solid #67230e;
+}
+
+
+/*footer*/
+.footer {
+    background-color: #7e5c43;
+    padding: 20px 0;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #7e5c43;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #7e5c43;
+}
+
+.footer-section {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    
+    background-color: #7e5c43;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #7e5c43;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 15px;
+    margin-bottom: 5px;
+    background-color: #7e5c43;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+    background-color: #7e5c43;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    background-color: #7e5c43;
+    color: black;
+}
+
+.footer-bottom {
+    border-top: 1px solid #787a6c;
+    text-align: center;
+    font-size: 16px;
+    background-color: #7e5c43;
+}
+.footer-bottom p{
+
+    background-color: #7e5c43;
+}
+
+  
+  
+/*ratecake*/
+
+.rate-cake button{
+    background-color: #7e5c43;
+    border: 1px solid #7e5c43;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+}
+
+.rate-cake button:hover{
+    background-color: #67230e;
+    border: 1px solid #67230e;
+}
+
+
+/*regulamin*/
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: var(--bialy);
+}
+
+.section-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--bialy);
+}
+
+.section-content {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--bialy);
+}
+
+.section-content ol li {
+  background-color: var(--czarny);
+}
+.section-content li {
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--bialy);
+}
+
+.success-heading {
+    color: green;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.success-heading p{
+    background-color: 	#90EE90;
+    color: green;
+    border: 1px solid #90EE90;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+/*change_product.php*/
+  
+.update-button {
+   background-color: #7e5c43;
+   color: white;
+   border: none;
+   padding: 1px 5px;
+}
+
+/*add_product*/
+.addproduct-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.addproduct-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.addproduct-form input[type="text"],
+.addproduct-form input[type="number"],
+.addproduct-form textarea,
+.addproduct-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 3px solid #787a6c;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 17px;
+}
+.addproduct-form input:focus{
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, rgba(103,35,14,1) 0%,rgba(149,75,48,1) 50%, rgba(103,35,14,1) 100%);
+    transition: transform 0.5 ease;
+
+}
+.addproduct-form input[type="submit"] {
+    background-color: #7e5c43;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.addproduct-form input[type="submit"]:hover {
+    background-color: #7e5c43;
+}
+
+.addproduct-form select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.theme-button{
+    background-color: #7e5c43;
+    color: white;
+    border: 1px solid #7e5c43;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+/*formMotyw*/
+
+

@@ -1,0 +1,15 @@
+{
+  "logo": "Cukiernia internetowa",
+  "home": "Strona główna",
+  "shop": "Sklep",
+  "about": "O nas",
+  "welcome": "Witaj",
+  "logout": "Wyloguj",
+  "login": "Logowanie",
+  "signup": "Rejestracja",
+  "cart": "Koszyk",
+  "theme": {
+    "light": "Zmień na jasny",
+    "dark": "Zmień na ciemny"
+  }
+}

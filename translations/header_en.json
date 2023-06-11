@@ -1,0 +1,15 @@
+{
+  "logo": "Cukiernia internetowa",
+  "home": "Home",
+  "shop": "Shop",
+  "about": "About",
+  "welcome": "Welcome",
+  "logout": "Log out",
+  "login": "Log in",
+  "signup": "Sign up",
+  "cart": "Cart",
+  "theme": {
+    "light": "Switch to Light",
+    "dark": "Switch to Dark"
+  }
+}

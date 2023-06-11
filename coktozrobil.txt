@@ -1,0 +1,10 @@
+kto co robił:
+jakub - strona o nas
+damian:
+tłumaczenie, odzyskiwanie hasła, zmiana ilości i ceny ciast, top 10 produktów, ocena ciast
+michał:
+bazy danych, css
+strona startowa, nagłówek, stopka regulamin, polityka,
+koszyk, ciasta kategorie, profil użytkownika, logowanie rejestracja,
+zmiana hasła, zmiana danych użytkownika, panel pracownika, generowanie etykiet,
+dodawanie ciast do bazy 
